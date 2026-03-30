@@ -1,24 +1,24 @@
 # Site Settings
 title: "AI for Weather & Climate Research"
-name: "Minglang Zhang"
-description: "Research on Artificial Intelligence for Weather Forecasting and Climate Modeling"
-url: "https://zhangminglang42.github.io"
+name: "李国文 (Guowen Li)"
+description: "Research on Artificial Intelligence for Weather Forecasting and Climate Modeling at Sun Yat-sen University"
+url: "https://zhangminglang42.github.io/Guowen.github.io"
 baseurl: "" # leave empty if publishing to username.github.io
 
 # Author
 author:
-  name: "Minglang Zhang"
+  name: "李国文 (Guowen Li)"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Researcher specializing in AI applications for meteorology and climate science"
-  location: "Earth System Science"
-  email: "your.email@example.com"
+  bio: "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science"
+  location: "Sun Yat-sen University, Guangzhou, China"
+  email: "ligw8@mail2.sysu.edu.cn"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/zhangminglang42"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com"
+      url: "https://scholar.google.com/citations?user=xLf7K7wAAAAJ"
     - label: "ORCID"
       icon: "ai ai-orcid"
       url: "https://orcid.org"

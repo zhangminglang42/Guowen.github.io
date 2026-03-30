@@ -4,44 +4,44 @@ permalink: /about/
 layout: single
 ---
 
-## Minglang Zhang
+## 李国文 (Guowen Li)
 
-**AI Researcher | Meteorology & Climate Science**
+**AI Researcher | Meteorology & Climate Science | Sun Yat-sen University**
 
-I am a researcher specializing in the application of artificial intelligence to meteorological forecasting and climate modeling. My work bridges the gap between traditional atmospheric science and modern machine learning techniques.
+我是中山大学的研究人员，专注于人工智能在气象预报和气候建模中的应用。我的研究工作旨在弥合传统大气科学与现代机器学习技术之间的差距。
 
-### Research Interests
+### 研究方向
 
-- **AI-enhanced Weather Prediction**: Developing deep learning models that improve forecast accuracy and computational efficiency
-- **Climate Model Emulation**: Using neural networks to create fast, accurate emulators of complex climate models
-- **Extreme Event Analysis**: Machine learning approaches for detecting and predicting severe weather phenomena
-- **Multimodal Data Fusion**: Integrating satellite imagery, radar data, and numerical model outputs
+- **AI增强天气预报**：开发提高预报精度和计算效率的深度学习模型
+- **气候模型仿真**：使用神经网络创建快速、准确的复杂气候模型仿真器
+- **极端事件分析**：应用机器学习方法检测和预测极端天气现象
+- **多模态数据融合**：整合卫星图像、雷达数据和数值模型输出
 
-### Education
+### 教育背景
 
-- **Ph.D. in Atmospheric Sciences** (Expected 202X)  
-  University Name, Department  
-  Dissertation: "Deep Learning Approaches for Medium-Range Weather Forecasting"
+- **大气科学博士**（预计202X年）  
+  中山大学，大气科学学院  
+  博士论文："基于深度学习的中期天气预报方法研究"
 
-- **M.S. in Computer Science** (202X)  
-  University Name  
-  Thesis: "Transformer Architectures for Spatiotemporal Climate Data"
+- **计算机科学硕士**（202X年）  
+  中山大学  
+  硕士论文："面向时空气候数据的Transformer架构研究"
 
-- **B.S. in Meteorology** (202X)  
-  University Name
+- **气象学学士**（202X年）  
+  中山大学
 
-### Professional Experience
+### 工作经历
 
-- **Research Scientist** (202X-Present)  
-  Research Institute/University  
-  - Lead AI weather forecasting projects
-  - Develop novel neural network architectures for climate data
-  - Collaborate with meteorological agencies
+- **研究科学家**（202X年-至今）  
+  中山大学大气科学学院  
+  - 领导AI天气预报项目
+  - 开发面向气候数据的新型神经网络架构
+  - 与气象机构合作开展研究
 
-- **AI Research Intern** (Summer 202X)  
-  Tech Company/Research Lab  
-  - Applied computer vision techniques to satellite imagery analysis
-  - Developed precipitation nowcasting models
+- **AI研究实习生**（202X年夏季）  
+  中国气象局/相关研究机构  
+  - 应用计算机视觉技术分析卫星图像
+  - 开发降水临近预报模型
 
 ### Skills
 
