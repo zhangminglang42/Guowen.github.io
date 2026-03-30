@@ -8,7 +8,7 @@ header:
   overlay_color: "#1a6fb4"
   actions:
     - label: "📄 论文发表"
-      url: "/publications.html"
+      url: "/publications/"
       btn_class: "btn--primary"
     - label: "🔬 研究项目"
       url: "/projects/"
