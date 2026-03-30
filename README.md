@@ -1,80 +1,127 @@
-# 学术个人网站 - AI for Weather & Climate Research
+# 李国文 (Guowen Li) - 个人学术网站
 
-李国文（Guowen Li）的个人学术网站，展示人工智能在气象和气候科学中的应用研究。
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线-blue)](https://zhangminglang42.github.io)
+[![Jekyll](https://img.shields.io/badge/Jekyll-4.x-red)](https://jekyllrb.com)
+[![主题](https://img.shields.io/badge/主题-Minimal%20Mistakes-green)](https://mmistakes.github.io/minimal-mistakes/)
 
-## 网站特点
+## 🌐 网站地址
 
-- 响应式设计，适配手机、平板和电脑
-- 基于Jekyll和Minimal Mistakes主题
-- 论文发表列表展示
-- 研究项目介绍
-- 个人简历和联系方式
-- 优化搜索引擎可见性
+- **主站**: https://zhangminglang42.github.io
+- **出版物页面**: https://zhangminglang42.github.io/publications/
 
-## 本地开发
+## 📋 网站功能
 
-### 前提条件
-- Ruby 2.5.0或更高版本
+### 1. 首页展示
+- **个人简介**: 照片、职位、研究方向、联系方式
+- **研究方向**: 人工智能在气象与气候科学中的应用
+- **近期发表**: 直接在首页显示最新的期刊论文和会议论文
+- **进行中项目**: 当前参与的研究项目
+
+### 2. 出版物页面
+- **两栏布局**: 左侧个人照片和信息，右侧完整出版物列表
+- **分类展示**: 按期刊论文、会议论文、预印本、学位论文分类
+- **年份分组**: 按发表年份清晰分组
+- **响应式设计**: 适配桌面和移动设备
+
+### 3. 导航结构
+- 首页
+- 发表论文
+- 关于
+- 联系
+
+## 🛠 技术栈
+
+- **静态网站生成器**: Jekyll 4.x
+- **主题**: Minimal Mistakes
+- **部署**: GitHub Pages
+- **CSS预处理器**: Sass
+- **Markdown处理器**: kramdown
+
+## 📁 项目结构
+
+```
+zhangminglang42.github.io/
+├── _config.yml              # 网站配置文件
+├── index.md                 # 首页（包含个人简介和近期发表）
+├── _pages/                  # 内容页面
+│   ├── publications.md      # 完整出版物页面
+│   ├── about.md            # 关于页面
+│   └── contact.md          # 联系页面
+├── _data/                   # 数据文件
+│   └── navigation.yml      # 导航配置
+├── assets/                  # 静态资源
+│   ├── images/             # 图片文件
+│   │   ├── bio-photo.jpg   # 个人照片
+│   │   └── weather-banner.jpg # 首页横幅
+│   └── css/                # 自定义CSS
+├── Gemfile                 # Ruby依赖
+└── README.md               # 项目说明
+```
+
+## 🚀 本地开发
+
+### 环境要求
+- Ruby 2.5.0+
 - Bundler gem
+- Jekyll 4.x
 
-### 安装和运行
+### 安装步骤
 ```bash
+# 克隆仓库
+git clone https://github.com/zhangminglang42/zhangminglang42.github.io.git
+cd zhangminglang42.github.io
+
 # 安装依赖
 bundle install
 
 # 本地运行
 bundle exec jekyll serve
 
-# 访问 http://localhost:4000/Guowen.github.io
+# 访问 http://localhost:4000
 ```
 
-## 部署
+### 内容更新
+1. **更新个人信息**: 编辑 `_config.yml`
+2. **更新出版物**: 编辑 `_pages/publications.md`
+3. **更新首页内容**: 编辑 `index.md`
+4. **更新关于页面**: 编辑 `_pages/about.md`
 
-本网站配置为GitHub Pages自动部署：
+## 📄 出版物格式
 
-1. 推送到 `main` 分支
-2. GitHub Actions会自动构建和部署
-3. 网站地址：https://zhangminglang42.github.io/Guowen.github.io
+出版物页面支持以下格式：
+- **期刊论文**: 标题、作者、期刊、年份、PDF/代码链接
+- **会议论文**: 标题、作者、会议名称、年份、PDF链接
+- **预印本**: 标题、作者、arXiv编号、链接
+- **学位论文**: 标题、作者、学位类型、年份、PDF链接
 
-## 内容管理
+## 🌟 设计特点
 
-### 更新个人信息
-- 编辑 `_config.yml` 修改网站设置
-- 编辑 `about.md` 更新个人简介
+1. **响应式设计**: 完美适配手机、平板、电脑
+2. **照片自适应**: 自动适应不同尺寸的个人照片
+3. **专业布局**: 学术风格的清晰布局
+4. **快速加载**: 优化CSS和图片，提升访问速度
+5. **SEO友好**: 优化搜索引擎可见性
 
-### 添加论文
-编辑 `_pages/publications.md` 文件，按照现有格式添加新的论文条目。
+## 🔗 重要链接
 
-### 添加项目
-编辑 `_pages/projects.md` 文件，添加新的研究项目。
+- **Google Scholar**: https://scholar.google.com/citations?user=xLf7K7wAAAAJ
+- **GitHub**: https://github.com/zhangminglang42
+- **邮箱**: ligw8@mail2.sysu.edu.cn
 
-### 导航菜单
-编辑 `_data/navigation.yml` 修改网站导航结构。
+## 📝 许可证
 
-## 技术细节
+网站内容采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可证，除非另有说明。
 
-### 使用的技术
-- **静态网站生成器**: Jekyll 4.x
-- **主题**: Minimal Mistakes
-- **CSS预处理器**: Sass
-- **部署**: GitHub Pages + GitHub Actions
-
-### 文件结构
-```
-.
-├── _config.yml          # 网站配置文件
-├── _pages/              # 内容页面
-├── _data/               # 数据文件（导航等）
-├── assets/              # 静态资源（CSS、图片等）
-├── index.md             # 首页
-├── about.md             # 关于页面
-└── .github/workflows/   # GitHub Actions工作流
-```
-
-## 许可证
-
-网站内容采用 CC BY 4.0 许可证，除非另有说明。
-
-## 贡献
+## 🤝 贡献
 
 如需修改网站代码，请提交Pull Request。
+
+## 📞 支持
+
+如有问题或建议，请通过以下方式联系：
+- 邮箱: ligw8@mail2.sysu.edu.cn
+- GitHub Issues: https://github.com/zhangminglang42/zhangminglang42.github.io/issues
+
+---
+
+*最后更新: 2024年3月*
