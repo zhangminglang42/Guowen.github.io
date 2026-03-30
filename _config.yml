@@ -52,7 +52,6 @@ sass:
 # Include custom CSS
 include:
   - assets/css/custom.scss
-  - assets/css/custom-publications.scss
 
 # Defaults
 defaults:
@@ -65,15 +64,6 @@ defaults:
       share: true
       comments: false
       read_time: false
-
-# Collections
-collections:
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  projects:
-    output: true
-    permalink: /:collection/:path/
 
 # Exclude from processing
 exclude:
