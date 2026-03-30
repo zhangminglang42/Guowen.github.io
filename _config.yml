@@ -38,6 +38,15 @@ plugins:
 minimal_mistakes_skin: "default"
 search: true
 
+# Custom CSS
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Include custom CSS
+include:
+  - assets/css/custom.scss
+
 # Defaults
 defaults:
   - scope:

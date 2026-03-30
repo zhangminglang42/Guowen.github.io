@@ -1,0 +1,176 @@
+---
+# 自定义CSS样式
+---
+
+// 气象主题颜色
+$weather-blue: #1a6fb4;
+$climate-green: #2e8b57;
+$storm-gray: #4a5568;
+$sun-yellow: #f6ad55;
+
+// 覆盖主题变量
+$primary-color: $weather-blue;
+$link-color: $weather-blue;
+$border-color: #e2e8f0;
+
+// 自定义样式
+.weather-theme {
+  // 标题样式
+  h1, h2, h3 {
+    color: $weather-blue;
+    font-weight: 600;
+  }
+  
+  // 导航栏
+  .masthead {
+    background: linear-gradient(135deg, $weather-blue 0%, #2c5282 100%);
+    
+    .site-title {
+      color: white;
+      font-weight: 700;
+    }
+    
+    .site-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  // 按钮
+  .btn--primary {
+    background-color: $weather-blue;
+    border-color: $weather-blue;
+    
+    &:hover {
+      background-color: darken($weather-blue, 10%);
+      border-color: darken($weather-blue, 10%);
+    }
+  }
+  
+  // 卡片样式
+  .feature__item {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  // 出版物列表
+  .publication-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid $weather-blue;
+    background-color: #f8fafc;
+    
+    .publication-title {
+      font-weight: 600;
+      color: $storm-gray;
+    }
+    
+    .publication-authors {
+      color: #718096;
+      font-style: italic;
+    }
+    
+    .publication-links {
+      margin-top: 0.5rem;
+      
+      a {
+        margin-right: 1rem;
+        color: $weather-blue;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  // 项目卡片
+  .project-card {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    
+    .project-title {
+      color: $weather-blue;
+      border-bottom: 2px solid $climate-green;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .project-meta {
+      color: #718096;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      
+      span {
+        margin-right: 1rem;
+        
+        &::before {
+          content: "•";
+          margin-right: 0.5rem;
+          color: $sun-yellow;
+        }
+      }
+    }
+  }
+  
+  // 联系表单
+  .contact-form {
+    background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    
+    .form-group {
+      label {
+        color: $storm-gray;
+        font-weight: 600;
+      }
+      
+      input, select, textarea {
+        border: 2px solid #e2e8f0;
+        border-radius: 6px;
+        transition: border-color 0.2s;
+        
+        &:focus {
+          border-color: $weather-blue;
+          box-shadow: 0 0 0 3px rgba($weather-blue, 0.1);
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+// 响应式调整
+@media (max-width: 768px) {
+  .masthead {
+    padding: 1rem !important;
+  }
+  
+  .feature__item {
+    margin-bottom: 1rem;
+  }
+}
+
+// 打印样式
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  .publication-item {
+    page-break-inside: avoid;
+  }
+}
