@@ -1,0 +1,70 @@
+# Site Settings
+title: "AI for Weather & Climate Research"
+name: "Minglang Zhang"
+description: "Research on Artificial Intelligence for Weather Forecasting and Climate Modeling"
+url: "https://zhangminglang42.github.io"
+baseurl: "" # leave empty if publishing to username.github.io
+
+# Author
+author:
+  name: "Minglang Zhang"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Researcher specializing in AI applications for meteorology and climate science"
+  location: "Earth System Science"
+  email: "your.email@example.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/zhangminglang42"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com"
+
+# Build Settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Theme Settings
+minimal_mistakes_skin: "default"
+search: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+      share: true
+      comments: false
+      read_time: false
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
