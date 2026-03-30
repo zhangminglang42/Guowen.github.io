@@ -1,9 +1,9 @@
 # Site Settings
-title: "AI for Weather & Climate Research"
+title: "AI for Weather & Climate Research | 李国文"
 name: "李国文 (Guowen Li)"
-description: "Research on Artificial Intelligence for Weather Forecasting and Climate Modeling at Sun Yat-sen University"
-url: "https://zhangminglang42.github.io/Guowen.github.io"
-baseurl: "" # leave empty if publishing to username.github.io
+description: "中山大学研究员，专注于人工智能在气象预报和气候建模中的应用研究"
+url: "https://zhangminglang42.github.io"
+baseurl: "/Guowen.github.io" # 项目页面需要baseurl
 
 # Author
 author:
@@ -29,10 +29,13 @@ author:
 # Build Settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
+# GitHub Pages compatible plugins
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Theme Settings
 minimal_mistakes_skin: "default"
