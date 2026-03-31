@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "AI for Weather & Climate Research"
 title_separator          : "-"
-name                     : &name "李国文 (Guowen Li)"
-description              : &description "中山大学研究员，专注于人工智能在气象预报和气候建模中的应用研究"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Guowen Li (李国文)"
+description              : &description "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://zhangminglang42.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,9 +24,9 @@ repository               : "zhangminglang42/zhangminglang42.github.io"
 author:
   # Biographic information
   avatar           : "/assets/images/bio-photo.jpg"
-  name             : "李国文 (Guowen Li)"
+  name             : "Guowen Li (李国文)"
   pronouns         : # example: "she/her"  
-  bio              : "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science"
+  bio              : "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science."
   location         : "Sun Yat-sen University, Guangzhou, China"
   employer         : "Sun Yat-sen University"
   uri              : https://zhangminglang42.github.io

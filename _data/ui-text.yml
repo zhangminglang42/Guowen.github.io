@@ -1,0 +1,46 @@
+# User interface text
+# English (default)
+en:
+  # Post/Page
+  page            : "Page"
+  pagination      : "Pagination"
+  minute_read     : "min read"
+  less_than       : "less than"
+  about           : "about"
+  
+  # Sharing
+  share_on        : "Share on"
+  
+  # Comments
+  comments        : "Comments"
+  comment         : "Comment"
+  comments_disabled : "Comments disabled"
+  
+  # Search
+  search          : "Search"
+  search_placeholder : "Enter your search term..."
+  search_no_results : "No results found"
+  
+  # Navigation
+  menu            : "Menu"
+  skip_links      : "Skip links"
+  skip_primary_nav : "Skip to primary navigation"
+  skip_content    : "Skip to content"
+  skip_footer     : "Skip to footer"
+  
+  # Footer
+  powered_by      : "Powered by"
+  subscribe       : "Subscribe"
+  follow          : "Follow"
+  
+  # 404
+  page_not_found  : "Page not found"
+  page_not_found_message : "Sorry, the page you were trying to view does not exist."
+  
+  # Button labels
+  email_label     : "Email"
+  website_label   : "Website"
+  
+  # Archives
+  archives        : "Archives"
+  archive_date_format : "%b %Y"

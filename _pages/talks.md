@@ -10,19 +10,16 @@ author_profile: true
 ### 2024
 - **"AI for Weather Forecasting: Recent Advances and Challenges"**  
   International Conference on Artificial Intelligence in Earth Sciences  
-  Beijing, China | June 2024  
-  [Slides](/assets/talks/2024_ai_weather_forecasting.pdf)
+  Beijing, China | June 2024
 
 - **"Deep Learning Approaches for Climate Model Emulation"**  
   Workshop on Machine Learning for Climate Modeling  
-  Online | March 2024  
-  [Recording](https://youtube.com/example)
+  Online | March 2024
 
 ### 2023
 - **"Transformer-based Precipitation Nowcasting"**  
   American Meteorological Society Annual Meeting  
-  Denver, CO, USA | January 2023  
-  [Poster](/assets/talks/2023_ams_poster.pdf)
+  Denver, CO, USA | January 2023
 
 - **"Machine Learning for Extreme Weather Detection"**  
   Chinese Meteorological Society Conference  

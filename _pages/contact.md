@@ -89,40 +89,6 @@ I welcome the following types of collaboration inquiries:
   <button type="submit" class="btn btn--primary">Send Message</button>
 </form>
 
-<style>
-.contact-form {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-.form-group textarea {
-  resize: vertical;
-}
-</style>
-
 ## Location
 
 <iframe 

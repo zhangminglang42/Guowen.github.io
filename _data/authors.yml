@@ -1,0 +1,15 @@
+# Authors
+guowen_li:
+  name        : "Guowen Li"
+  bio         : "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ligw8@mail2.sysu.edu.cn"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zhangminglang42"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar ai-fw"
+      url: "https://scholar.google.com/citations?user=xLf7K7wAAAAJ"

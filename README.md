@@ -1,127 +1,95 @@
-# 李国文 (Guowen Li) - 个人学术网站
+# Academic Pages
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线-blue)](https://zhangminglang42.github.io)
-[![Jekyll](https://img.shields.io/badge/Jekyll-4.x-red)](https://jekyllrb.com)
-[![主题](https://img.shields.io/badge/主题-Minimal%20Mistakes-green)](https://mmistakes.github.io/minimal-mistakes/)
+**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
-## 🌐 网站地址
+## Getting Started
 
-- **主站**: https://zhangminglang42.github.io
-- **出版物页面**: https://zhangminglang42.github.io/publications/
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Click the "Use this template" button in the top right.
+1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
+1. Set site-wide configuration and add your content.
+1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
+1. Check status by going to the repository settings, in the "GitHub pages" section
+1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
-## 📋 网站功能
+See more info at https://academicpages.github.io/
 
-### 1. 首页展示
-- **个人简介**: 照片、职位、研究方向、联系方式
-- **研究方向**: 人工智能在气象与气候科学中的应用
-- **近期发表**: 直接在首页显示最新的期刊论文和会议论文
-- **进行中项目**: 当前参与的研究项目
+## Running locally
 
-### 2. 出版物页面
-- **两栏布局**: 左侧个人照片和信息，右侧完整出版物列表
-- **分类展示**: 按期刊论文、会议论文、预印本、学位论文分类
-- **年份分组**: 按发表年份清晰分组
-- **响应式设计**: 适配桌面和移动设备
+When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
 
-### 3. 导航结构
-- 首页
-- 发表论文
-- 关于
-- 联系
+1. Clone the repository and made updates as detailed above.
 
-## 🛠 技术栈
+### Using a different IDE
+1. Make sure you have ruby-dev, bundler, and nodejs installed
+    
+    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    ```bash
+    sudo apt install ruby-dev ruby-bundler nodejs
+    ```
+    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
+    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
 
-- **静态网站生成器**: Jekyll 4.x
-- **主题**: Minimal Mistakes
-- **部署**: GitHub Pages
-- **CSS预处理器**: Sass
-- **Markdown处理器**: kramdown
+    On MacOS the commands are:
+    ```bash
+    brew install ruby
+    brew install node
+    gem install bundler
+    ```
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 
-## 📁 项目结构
+    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
+    Install Gems Locally (Recommended):
+    ```bash
+    bundle config set --local path 'vendor/bundle'
+    ```
+    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
 
-```
-zhangminglang42.github.io/
-├── _config.yml              # 网站配置文件
-├── index.md                 # 首页（包含个人简介和近期发表）
-├── _pages/                  # 内容页面
-│   ├── publications.md      # 完整出版物页面
-│   ├── about.md            # 关于页面
-│   └── contact.md          # 联系页面
-├── _data/                   # 数据文件
-│   └── navigation.yml      # 导航配置
-├── assets/                  # 静态资源
-│   ├── images/             # 图片文件
-│   │   ├── bio-photo.jpg   # 个人照片
-│   │   └── weather-banner.jpg # 首页横幅
-│   └── css/                # 自定义CSS
-├── Gemfile                 # Ruby依赖
-└── README.md               # 项目说明
-```
+1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
+    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
 
-## 🚀 本地开发
+If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
-### 环境要求
-- Ruby 2.5.0+
-- Bundler gem
-- Jekyll 4.x
+## Using Docker
 
-### 安装步骤
+Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+
+You can build and execute the container by running the following command in the repository:
+
 ```bash
-# 克隆仓库
-git clone https://github.com/zhangminglang42/zhangminglang42.github.io.git
-cd zhangminglang42.github.io
-
-# 安装依赖
-bundle install
-
-# 本地运行
-bundle exec jekyll serve
-
-# 访问 http://localhost:4000
+chmod -R 777 .
+docker compose up
 ```
 
-### 内容更新
-1. **更新个人信息**: 编辑 `_config.yml`
-2. **更新出版物**: 编辑 `_pages/publications.md`
-3. **更新首页内容**: 编辑 `index.md`
-4. **更新关于页面**: 编辑 `_pages/about.md`
+You should now be able to access the website from `localhost:4000`.
 
-## 📄 出版物格式
+### Using the DevContainer in VS Code
 
-出版物页面支持以下格式：
-- **期刊论文**: 标题、作者、期刊、年份、PDF/代码链接
-- **会议论文**: 标题、作者、会议名称、年份、PDF链接
-- **预印本**: 标题、作者、arXiv编号、链接
-- **学位论文**: 标题、作者、学位类型、年份、PDF链接
+If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
 
-## 🌟 设计特点
+# Maintenance
 
-1. **响应式设计**: 完美适配手机、平板、电脑
-2. **照片自适应**: 自动适应不同尺寸的个人照片
-3. **专业布局**: 学术风格的清晰布局
-4. **快速加载**: 优化CSS和图片，提升访问速度
-5. **SEO友好**: 优化搜索引擎可见性
+Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
-## 🔗 重要链接
+This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
 
-- **Google Scholar**: https://scholar.google.com/citations?user=xLf7K7wAAAAJ
-- **GitHub**: https://github.com/zhangminglang42
-- **邮箱**: ligw8@mail2.sysu.edu.cn
+## Bugfixes and enhancements
 
-## 📝 许可证
+If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
 
-网站内容采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可证，除非另有说明。
-
-## 🤝 贡献
-
-如需修改网站代码，请提交Pull Request。
-
-## 📞 支持
-
-如有问题或建议，请通过以下方式联系：
-- 邮箱: ligw8@mail2.sysu.edu.cn
-- GitHub Issues: https://github.com/zhangminglang42/zhangminglang42.github.io/issues
+Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
 
 ---
+<div align="center">
+    
+![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
+[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-*最后更新: 2024年3月*
+[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
+[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
+</div>

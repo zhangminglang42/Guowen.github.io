@@ -1,0 +1,74 @@
+<!-- Feature Row -->
+<div class="feature__wrapper">
+  <div class="feature__item">
+    <div class="archive__item">
+      <div class="archive__item-body">
+        <h3 class="archive__item-title">Weather Forecasting</h3>
+        <div class="archive__item-excerpt">
+          <p>AI-enhanced numerical weather prediction models for improved accuracy and efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item">
+      <div class="archive__item-body">
+        <h3 class="archive__item-title">Climate Modeling</h3>
+        <div class="archive__item-excerpt">
+          <p>Machine learning approaches for climate model emulation and downscaling.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature__item">
+    <div class="archive__item">
+      <div class="archive__item-body">
+        <h3 class="archive__item-title">Extreme Weather</h3>
+        <div class="archive__item-excerpt">
+          <p>Deep learning systems for detection and early warning of severe meteorological events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.feature__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature__item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #1a6fb4;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.archive__item-title {
+  color: #1a6fb4;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.archive__item-excerpt p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+@media (max-width: 768px) {
+  .feature__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

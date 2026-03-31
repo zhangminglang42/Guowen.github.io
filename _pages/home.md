@@ -1,24 +1,22 @@
 ---
-layout: single
-title: "AI for Weather & Climate Research"
-excerpt: "中山大学研究员 · 人工智能在气象与气候科学中的应用"
+title: "Home"
+layout: home
+author_profile: true
 header:
   overlay_image: /assets/images/weather-banner.jpg
   overlay_filter: 0.3
   overlay_color: "#1a6fb4"
   actions:
-    - label: "📄 Publications"
+    - label: "Publications"
       url: "/publications/"
       btn_class: "btn--primary"
-    - label: "👤 About"
+    - label: "About"
       url: "/about/"
       btn_class: "btn--success"
-author_profile: true
+excerpt: "Researcher at Sun Yat-sen University specializing in AI applications for meteorology and climate science"
 ---
 
-
-
-{% include author-profile.html %}
+{% include feature_row %}
 
 ## Research Focus
 

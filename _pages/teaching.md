@@ -16,7 +16,6 @@ author_profile: true
 - Data analysis and visualization using xarray, pandas, and matplotlib
 - Machine learning applications in meteorology
 - Hands-on projects with real atmospheric datasets
-- [Course materials](/assets/teaching/atmospheric_data_science.zip)
 
 **Introduction to Machine Learning for Earth Sciences** (Undergraduate/Graduate)  
 *Fall 2023*
@@ -25,7 +24,6 @@ author_profile: true
 - Applications to weather forecasting, climate modeling, and remote sensing
 - Practical implementation using PyTorch and TensorFlow
 - Case studies from recent research literature
-- [Syllabus](/assets/teaching/ml_earth_sciences_syllabus.pdf)
 
 **Numerical Weather Prediction** (Graduate Level)  
 *Spring 2023 (Teaching Assistant)*
@@ -60,8 +58,7 @@ author_profile: true
 ### Organized Workshops
 - **"Hands-on AI for Weather Forecasting"**  
   Sun Yat-sen University, October 2023  
-  Two-day workshop covering practical implementation of AI weather models  
-  [Workshop materials](https://github.com/zhangminglang42/ai-weather-workshop)
+  Two-day workshop covering practical implementation of AI weather models
 
 - **"Python for Atmospheric Sciences"**  
   Chinese Meteorological Society, July 2023  
